@@ -24,10 +24,10 @@ class LaunchesAdapter(private val launches: List<Launch>) :
 
 
 
-        when (calendar) {
+        /*when (calendar) {
 
 
-        }
+        }*/
         Glide.with(holder.binding.missionImage).load(launches[position].links.mission_patch)
             .into(holder.binding.missionImage)
         holder.binding.missionName.text = launches[position].missionName
@@ -47,7 +47,5 @@ class LaunchesAdapter(private val launches: List<Launch>) :
 
     inner class ViewHolder(val binding: ItemLaunchBinding) : RecyclerView.ViewHolder(binding.root)
 
-
-}
 
 }
