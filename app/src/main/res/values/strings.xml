@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SpaceX</string>
+    <string name="base_url">https://api.spacexdata.com/v3/</string>
+    <string name="date_time">%1$s at %2$s</string>
+    <string name="rocket_name">%1$s / %2$s</string>
+    <string name="launch_date">%1$s - %2$s</string>
+    <string name="since_for">%sice$s</string>
+    <string name="company_info">%1$s was founded by %2$s in %3$d. It has now %4$d employees, %5$d launch sites, and is valued at %6$d </string>
+    <string name="mission">Mission:</string>
+</resources>

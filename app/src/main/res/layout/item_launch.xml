@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray"
+    android:layout_marginBottom="2dp">
+
+    <ImageView
+        android:id="@+id/mission_image"
+        android:layout_width="50dp"
+        android:layout_height="59dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/mission_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/mission"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/mission_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/date_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="2dp"
+        android:text="Date/time:"
+        app:layout_constraintStart_toEndOf="@+id/mission_image"
+        app:layout_constraintTop_toBottomOf="@+id/mission_title" />
+
+    <TextView
+        android:id="@+id/rcket_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="2dp"
+        android:text="Rocket:"
+        app:layout_constraintStart_toEndOf="@+id/mission_image"
+        app:layout_constraintTop_toBottomOf="@+id/date_time" />
+
+    <TextView
+        android:id="@+id/days_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="2dp"
+        android:text="Days:"
+        app:layout_constraintStart_toEndOf="@+id/mission_image"
+        app:layout_constraintTop_toBottomOf="@+id/rcket_title" />
+
+    <ImageView
+        android:id="@+id/succuess"
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/mission_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="mission Name"
+        app:layout_constraintEnd_toStartOf="@+id/succuess"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/date_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/date_time"
+        app:layout_constraintEnd_toStartOf="@+id/succuess"
+        app:layout_constraintStart_toStartOf="@+id/mission_name"
+        app:layout_constraintTop_toTopOf="@+id/date_title" />
+
+    <TextView
+        android:id="@+id/rocket_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/rocket_name"
+        app:layout_constraintEnd_toStartOf="@+id/succuess"
+        app:layout_constraintStart_toStartOf="@+id/date_time"
+        app:layout_constraintTop_toTopOf="@+id/rcket_title" />
+
+    <TextView
+        android:id="@+id/launch_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/launch_date"
+        app:layout_constraintStart_toStartOf="@+id/rocket_name"
+        app:layout_constraintTop_toTopOf="@+id/days_title" />
+
+    <TextView
+        android:id="@+id/since_for"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/since_for"
+        app:layout_constraintStart_toEndOf="@+id/mission_image"
+        app:layout_constraintTop_toBottomOf="@+id/days_title" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
